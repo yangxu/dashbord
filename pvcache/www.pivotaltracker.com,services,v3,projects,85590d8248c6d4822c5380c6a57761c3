@@ -1,0 +1,374 @@
+status: 200
+x-request-id: c542cb40a99448621bb34ddbe911d2b5
+content-location: https://www.pivotaltracker.com/services/v3/projects
+-content-encoding: gzip
+set-cookie: t_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJWNiODcwZDliZTcwMDdjMTdjMGZkMzU1MWI5NWYxOWU3BjsAVEkiD2V4cGlyZXNfYXQGOwBGSXU6CVRpbWUN1agcgKvLzREKOg1uYW5vX251bWkCIgM6DW5hbm9fZGVuaQY6DXN1Ym1pY3JvIgeAIDoLb2Zmc2V0aQA6CXpvbmVJIghVVEMGOwBUSSIQX2NzcmZfdG9rZW4GOwBGSSIxd3o1Szd5cEl4YkppRURzTkdiNWZicHJLbU9ibDVzTlRucjhtbUNLOHo3ND0GOwBG--34b29c0fda3e965f984ae9551043e7db12758a84;
+ path=/; HttpOnly
+x-powered-by: Phusion Passenger 4.0.41
+content-length: 12367
+server: nginx/1.6.0 + Phusion Passenger 4.0.41
+x-runtime: 0.027026
+x-tracker-client-pinger-interval: 8
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: max-age=0, private, must-revalidate
+date: Thu, 30 Oct 2014 21:04:28 GMT
+content-type: application/xml; charset=utf-8
+x-rack-cache: miss
+
+<?xml version="1.0" encoding="UTF-8"?>
+<projects type="array">
+  <project>
+    <id>442737</id>
+    <name>Community Profiles</name>
+    <iteration_length type="integer">1</iteration_length>
+    <week_start_day>Monday</week_start_day>
+    <point_scale>0,1,2,3</point_scale>
+    <account>The Providence Plan</account>
+    <first_iteration_start_time type="datetime">2012/01/02 08:00:00 UTC</first_iteration_start_time>
+    <current_iteration_number type="integer">148</current_iteration_number>
+    <enable_tasks type="boolean">true</enable_tasks>
+    <velocity_scheme>Average of 3 iterations</velocity_scheme>
+    <current_velocity>1</current_velocity>
+    <initial_velocity>10</initial_velocity>
+    <number_of_done_iterations_to_show>12</number_of_done_iterations_to_show>
+    <labels>admin,admintask,analyst,api,bbri,browser-bugs,core,data adapter,datadisplays,django,export,feedback,food policy,front-end,legend,maps,new ri profiles,ops,pittsburgh,testing,web design,wishlist</labels>
+    <last_activity_at type="datetime">2014/10/30 13:36:23 UTC</last_activity_at>
+    <allow_attachments>true</allow_attachments>
+    <public>false</public>
+    <use_https>false</use_https>
+    <bugs_and_chores_are_estimatable>false</bugs_and_chores_are_estimatable>
+    <commit_mode>false</commit_mode>
+    <memberships type="array">
+      <membership>
+        <id>1510021</id>
+        <person>
+          <email>rlee@provplan.org</email>
+          <name>Rebecca Lee</name>
+          <initials>RL</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>2062931</id>
+        <person>
+          <email>jellis@provplan.org</email>
+          <name>Jesse Ellis</name>
+          <initials>JE</initials>
+        </person>
+        <role>Owner</role>
+      </membership>
+      <membership>
+        <id>3152755</id>
+        <person>
+          <email>rkelly@provplan.org</email>
+          <name>Ryan Kelly</name>
+          <initials>RK</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>3152757</id>
+        <person>
+          <email>kpierson@provplan.org</email>
+          <name>Kim Pierson</name>
+          <initials>KP</initials>
+        </person>
+        <role>Owner</role>
+      </membership>
+      <membership>
+        <id>3704936</id>
+        <person>
+          <email>yxu@provplan.org</email>
+          <name>Yang Xu</name>
+          <initials>yxu</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>3790696</id>
+        <person>
+          <email>tharrigan@provplan.org</email>
+          <name>Tim Harrigan</name>
+          <initials>TH</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>4546638</id>
+        <person>
+          <email>ek2614@gmail.com</email>
+          <name>Erin Hyelin Kim</name>
+          <initials>EHK</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>4592532</id>
+        <person>
+          <email>asylvaria@provplan.org</email>
+          <name>Alyssa Sylvaria</name>
+          <initials>AS</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+    </memberships>
+    <integrations type="array">
+    </integrations>
+  </project>
+  <project>
+    <id>442739</id>
+    <name>Dual Search</name>
+    <iteration_length type="integer">1</iteration_length>
+    <week_start_day>Monday</week_start_day>
+    <point_scale>0,1,2,3</point_scale>
+    <account>The Providence Plan</account>
+    <first_iteration_start_time type="datetime">2011/12/26 08:00:00 UTC</first_iteration_start_time>
+    <current_iteration_number type="integer">149</current_iteration_number>
+    <enable_tasks type="boolean">true</enable_tasks>
+    <velocity_scheme>Average of 3 iterations</velocity_scheme>
+    <current_velocity>10</current_velocity>
+    <initial_velocity>10</initial_velocity>
+    <number_of_done_iterations_to_show>12</number_of_done_iterations_to_show>
+    <labels>backend,front-end,testing</labels>
+    <allow_attachments>true</allow_attachments>
+    <public>false</public>
+    <use_https>false</use_https>
+    <bugs_and_chores_are_estimatable>false</bugs_and_chores_are_estimatable>
+    <commit_mode>false</commit_mode>
+    <memberships type="array">
+      <membership>
+        <id>2225171</id>
+        <person>
+          <email>rlee@provplan.org</email>
+          <name>Rebecca Lee</name>
+          <initials>RL</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>4388564</id>
+        <person>
+          <email>yxu@provplan.org</email>
+          <name>Yang Xu</name>
+          <initials>yxu</initials>
+        </person>
+        <role>Owner</role>
+      </membership>
+      <membership>
+        <id>4388568</id>
+        <person>
+          <email>jellis@provplan.org</email>
+          <name>Jesse Ellis</name>
+          <initials>JE</initials>
+        </person>
+        <role>Owner</role>
+      </membership>
+    </memberships>
+    <integrations type="array">
+    </integrations>
+  </project>
+  <project>
+    <id>446767</id>
+    <name>Ops (Server Tasks)</name>
+    <iteration_length type="integer">1</iteration_length>
+    <week_start_day>Monday</week_start_day>
+    <point_scale>0,1,2,3</point_scale>
+    <account>The Providence Plan</account>
+    <first_iteration_start_time type="datetime">2012/01/02 05:00:00 UTC</first_iteration_start_time>
+    <current_iteration_number type="integer">148</current_iteration_number>
+    <enable_tasks type="boolean">true</enable_tasks>
+    <velocity_scheme>Average of 3 iterations</velocity_scheme>
+    <current_velocity>10</current_velocity>
+    <initial_velocity>10</initial_velocity>
+    <number_of_done_iterations_to_show>12</number_of_done_iterations_to_show>
+    <labels>cookbooks,deployment,done,dualsearch,security</labels>
+    <allow_attachments>true</allow_attachments>
+    <public>false</public>
+    <use_https>false</use_https>
+    <bugs_and_chores_are_estimatable>false</bugs_and_chores_are_estimatable>
+    <commit_mode>false</commit_mode>
+    <memberships type="array">
+      <membership>
+        <id>2137837</id>
+        <person>
+          <email>jellis@provplan.org</email>
+          <name>Jesse Ellis</name>
+          <initials>JE</initials>
+        </person>
+        <role>Owner</role>
+      </membership>
+      <membership>
+        <id>2225177</id>
+        <person>
+          <email>rlee@provplan.org</email>
+          <name>Rebecca Lee</name>
+          <initials>RL</initials>
+        </person>
+        <role>Owner</role>
+      </membership>
+      <membership>
+        <id>4388566</id>
+        <person>
+          <email>yxu@provplan.org</email>
+          <name>Yang Xu</name>
+          <initials>yxu</initials>
+        </person>
+        <role>Owner</role>
+      </membership>
+    </memberships>
+    <integrations type="array">
+    </integrations>
+  </project>
+  <project>
+    <id>445791</id>
+    <name>RI DataHUB</name>
+    <iteration_length type="integer">1</iteration_length>
+    <week_start_day>Monday</week_start_day>
+    <point_scale>0,1,2,3</point_scale>
+    <account>The Providence Plan</account>
+    <first_iteration_start_time type="datetime">2012/01/30 08:00:00 UTC</first_iteration_start_time>
+    <current_iteration_number type="integer">143</current_iteration_number>
+    <enable_tasks type="boolean">true</enable_tasks>
+    <velocity_scheme>Average of 3 iterations</velocity_scheme>
+    <current_velocity>7</current_velocity>
+    <initial_velocity>10</initial_velocity>
+    <number_of_done_iterations_to_show>50</number_of_done_iterations_to_show>
+    <labels>admin,advance-type reporting,aggregation,bug fixes round1,conversion to new indicator code,core,core admin features,core indicator updates,core schema updates,core-dcyf models,core-ohe model updates,cte round 1 indicators,data catalog search build out,data import,data model,data story,data story printing,data transfer,dimensions,dlt,full implementation of session saving,https://github.com/geopy/geopy,iceboxed,iists,ilists,indicators,linkage,ohe core db models,ops,permissions,portal,portal admin,portal admin improvements,portal minor ui tweaks r1,portal tag revamp,raw data dictionary,retired story,ride adult ed core db models,role based permission to portal content,security,sprint#1,sprint1,system,users can make their own data stories.,view,views,weave,weave 1.0 integration,weave api,weave upgrades,weave-related bugs round1,wishlist</labels>
+    <last_activity_at type="datetime">2014/10/29 20:34:33 UTC</last_activity_at>
+    <allow_attachments>true</allow_attachments>
+    <public>false</public>
+    <use_https>false</use_https>
+    <bugs_and_chores_are_estimatable>false</bugs_and_chores_are_estimatable>
+    <commit_mode>false</commit_mode>
+    <memberships type="array">
+      <membership>
+        <id>1514739</id>
+        <person>
+          <email>rlee@provplan.org</email>
+          <name>Rebecca Lee</name>
+          <initials>RL</initials>
+        </person>
+        <role>Owner</role>
+      </membership>
+      <membership>
+        <id>1935657</id>
+        <person>
+          <email>nchurchwell@provplan.org</email>
+          <name>Nikki Churchwell</name>
+          <initials>NC</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>2171641</id>
+        <person>
+          <email>jellis@provplan.org</email>
+          <name>Jesse Ellis</name>
+          <initials>JE</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>2753533</id>
+        <person>
+          <email>kpierson@provplan.org</email>
+          <name>Kim Pierson</name>
+          <initials>KP</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>3059215</id>
+        <person>
+          <email>tharrigan@provplan.org</email>
+          <name>Tim Harrigan</name>
+          <initials>TH</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>3152749</id>
+        <person>
+          <email>rkelly@provplan.org</email>
+          <name>Ryan Kelly</name>
+          <initials>RK</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>3438760</id>
+        <person>
+          <email>yxu@provplan.org</email>
+          <name>Yang Xu</name>
+          <initials>yxu</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>3544252</id>
+        <person>
+          <email>asylvaria@provplan.org</email>
+          <name>Alyssa Sylvaria</name>
+          <initials>AS</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>3736628</id>
+        <person>
+          <email>cbaptista@provplan.org</email>
+          <name>Chace Baptista</name>
+          <initials>CB</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>4285130</id>
+        <person>
+          <email>dsmith@provplan.org</email>
+          <name>Dan Smith</name>
+          <initials>DS</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>4336066</id>
+        <person>
+          <email>josh@endpoint.com</email>
+          <name>Josh Tolley</name>
+          <initials>JT</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>4347008</id>
+        <person>
+          <email>ek2614@gmail.com</email>
+          <name>Erin Hyelin Kim</name>
+          <initials>EHK</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>4577998</id>
+        <person>
+          <email>rpeterson@provplan.org</email>
+          <name>Rachel Peterson</name>
+          <initials>RP</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+      <membership>
+        <id>4807300</id>
+        <person>
+          <email>jdveiga@provplan.org</email>
+          <name>Jailson Da Veiga</name>
+          <initials>JDV</initials>
+        </person>
+        <role>Member</role>
+      </membership>
+    </memberships>
+    <integrations type="array">
+    </integrations>
+  </project>
+</projects>

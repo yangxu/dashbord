@@ -1,0 +1,42 @@
+status: 200
+x-request-id: 8affb013254ef1a42ba184bfc34a858d
+content-location: https://www.pivotaltracker.com/services/v3/projects/442739/iterations/current
+-content-encoding: gzip
+set-cookie: t_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJTYzMjRiZTkxZDY1YmQ1OTljMmFkMDhjMjg1NTUyMDVkBjsAVEkiD2V4cGlyZXNfYXQGOwBGSXU6CVRpbWUN1KgcgPmd8doKOg1uYW5vX251bWkuOg1uYW5vX2RlbmkGOg1zdWJtaWNybyIHBBA6C29mZnNldGkAOgl6b25lSSIIVVRDBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVFrc2NOdUxPSnNvNEs1ak1NcFRCa2N1a05BSTdDMmJTQnVPcUtDWHV6VEk9BjsARg%3D%3D--0807cb0ca6fcf0ff029a3f65d37a5eee2086306e;
+ path=/; HttpOnly
+x-powered-by: Phusion Passenger 4.0.41
+content-length: 1110
+server: nginx/1.6.0 + Phusion Passenger 4.0.41
+x-runtime: 0.073381
+x-tracker-client-pinger-interval: 8
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: max-age=0, private, must-revalidate
+date: Thu, 30 Oct 2014 20:54:47 GMT
+content-type: application/xml; charset=utf-8
+x-rack-cache: miss
+
+<?xml version="1.0" encoding="UTF-8"?>
+<iterations type="array">
+  <iteration>
+    <id type="integer">149</id>
+    <number type="integer">149</number>
+    <start type="datetime">2014/10/27 00:00:00 PDT</start>
+    <finish type="datetime">2014/11/03 00:00:00 PST</finish>
+    <team_strength type="float">1</team_strength>
+    <stories type="array">
+      <story>
+        <id type="integer">41092183</id>
+        <project_id type="integer">442739</project_id>
+        <story_type>bug</story_type>
+        <url>https://www.pivotaltracker.com/story/show/41092183</url>
+        <current_state>unstarted</current_state>
+        <description>No records are returned when Issue Date is selected but Issue End Date is not, and it's making me sad.</description>
+        <name>Issue End Date (Optional) is not optional</name>
+        <requested_by>Jim Lucht</requested_by>
+        <owned_by>Angel Medrano</owned_by>
+        <created_at type="datetime">2012/12/12 14:55:26 UTC</created_at>
+        <updated_at type="datetime">2012/12/12 14:55:28 UTC</updated_at>
+      </story>
+    </stories>
+  </iteration>
+</iterations>

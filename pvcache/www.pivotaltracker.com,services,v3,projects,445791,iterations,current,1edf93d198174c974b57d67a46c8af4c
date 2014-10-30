@@ -1,0 +1,492 @@
+status: 200
+x-request-id: 6c13d5d4ff6524cf2e578b0d0f74a7e3
+content-location: https://www.pivotaltracker.com/services/v3/projects/445791/iterations/current
+-content-encoding: gzip
+set-cookie: t_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJWQ3ZDJmNTFkNzZmOTA0NWE2NjE5ODQwN2ZhYTMzNDUwBjsAVEkiD2V4cGlyZXNfYXQGOwBGSXU6CVRpbWUN1agcgClyeg4KOg1uYW5vX251bWkCPQM6DW5hbm9fZGVuaQY6DXN1Ym1pY3JvIgeCkDoLb2Zmc2V0aQA6CXpvbmVJIghVVEMGOwBUSSIQX2NzcmZfdG9rZW4GOwBGSSIxVlcyWGFnTnNhUWJvYU1mYW5ZWEx6Q0hnYjRaUTlNYUZOblh6THgvT1Rmaz0GOwBG--f3a0419a51a20a9dfdc7ad6e68e7834233441a8a;
+ path=/; HttpOnly
+x-powered-by: Phusion Passenger 4.0.41
+content-length: 23638
+server: nginx/1.6.0 + Phusion Passenger 4.0.41
+x-runtime: 0.244945
+x-tracker-client-pinger-interval: 8
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: max-age=0, private, must-revalidate
+date: Thu, 30 Oct 2014 21:03:39 GMT
+content-type: application/xml; charset=utf-8
+x-rack-cache: miss
+
+<?xml version="1.0" encoding="UTF-8"?>
+<iterations type="array">
+  <iteration>
+    <id type="integer">143</id>
+    <number type="integer">143</number>
+    <start type="datetime">2014/10/27 00:00:00 PDT</start>
+    <finish type="datetime">2014/11/03 00:00:00 PST</finish>
+    <team_strength type="float">1</team_strength>
+    <stories type="array">
+      <story>
+        <id type="integer">77471578</id>
+        <project_id type="integer">445791</project_id>
+        <story_type>chore</story_type>
+        <url>https://www.pivotaltracker.com/story/show/77471578</url>
+        <current_state>accepted</current_state>
+        <description>Coordinate with George and Joan
+
+Joan's email: joan.disanto@dlt.ri.gov
+
+I'm guessing we don't need or want to generate her keys for her. We'll just need to get her public key, right? 
+
+Toggl: DLT-WDQI</description>
+        <name>DLT SFTP Access</name>
+        <requested_by>Rebecca Lee</requested_by>
+        <owned_by>Jesse Ellis</owned_by>
+        <created_at type="datetime">2014/08/22 19:22:34 UTC</created_at>
+        <updated_at type="datetime">2014/10/28 15:19:58 UTC</updated_at>
+        <accepted_at type="datetime">2014/10/28 15:19:57 UTC</accepted_at>
+        <labels>core,dlt,security</labels>
+        <notes type="array">
+          <note>
+            <id type="integer">79056170</id>
+            <text>If she can provide us with a public key, then she probably knows how to configure her SFTP client. In that case, we would just need the public key and give her the username (dlt?) and the server. Would we want to use data.ridatahub.org, or would it be bad for them to see all the other users (data providers) on the server? We have 16GB currently available on that server and the other users are 21st-century, ccri, crusade, dcyf, jmermin, pasa, ric, serveri and uri.</text>
+            <author>Jesse Ellis</author>
+            <noted_at type="datetime">2014/09/08 22:44:06 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">79059650</id>
+            <text>hmm. I'd like for it to be the same server, I can't imagine they'd require their own dedicated one, as long as the accounts/users are locked down...what do you think?</text>
+            <author>Rebecca Lee</author>
+            <noted_at type="datetime">2014/09/08 23:34:49 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">79597892</id>
+            <text>No, that would be fine, I just wanted you to know it was an option. I know in the past we have been intentionally vague about the other datasets we have so that we wouldn't raise any new issues with them. That means **we just need her public key**. Did you want me to contact her?</text>
+            <author>Jesse Ellis</author>
+            <noted_at type="datetime">2014/09/15 14:27:46 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">79608190</id>
+            <text>That would be great if you could contact her and copy me. Thanks!</text>
+            <author>Rebecca Lee</author>
+            <noted_at type="datetime">2014/09/15 15:31:29 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">79636196</id>
+            <text>Email was sent earlier today. Waiting to hear back.</text>
+            <author>Jesse Ellis</author>
+            <noted_at type="datetime">2014/09/15 19:02:51 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">79636428</id>
+            <text>Thanks!</text>
+            <author>Rebecca Lee</author>
+            <noted_at type="datetime">2014/09/15 19:04:32 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">79747864</id>
+            <text>I have given Joan the passphrase over the phone, and sent an email with the private key and the server info</text>
+            <author>Jesse Ellis</author>
+            <noted_at type="datetime">2014/09/16 17:44:22 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">79747962</id>
+            <text>Was that the correct phone number? 462-8058?</text>
+            <author>Rebecca Lee</author>
+            <noted_at type="datetime">2014/09/16 17:45:03 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">79748182</id>
+            <text>yes, it went directly to her but she answered as &quot;Information Services&quot;</text>
+            <author>Jesse Ellis</author>
+            <noted_at type="datetime">2014/09/16 17:46:44 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">79748380</id>
+            <text>Good to know, thanks!</text>
+            <author>Rebecca Lee</author>
+            <noted_at type="datetime">2014/09/16 17:48:13 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">79833626</id>
+            <text>Joan is out of the office until tomorrow</text>
+            <author>Jesse Ellis</author>
+            <noted_at type="datetime">2014/09/17 13:23:36 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">79997620</id>
+            <text>One possible way to kill a couple of birds with one stone (so to speak) - we need to get file specs from Joan. These could be the test files she uses for the SFTP transfer. </text>
+            <author>Rebecca Lee</author>
+            <noted_at type="datetime">2014/09/18 19:50:37 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">80484938</id>
+            <text>I re-emailed Joan this morning. I'm awaiting a response to continue this story.</text>
+            <author>Jesse Ellis</author>
+            <noted_at type="datetime">2014/09/24 20:36:47 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">81095522</id>
+            <text>Joan requested my public key. I have sent her a public key corresponding with the private key stored in &quot;jellis&quot; home directory on the data server</text>
+            <author>Jesse Ellis</author>
+            <noted_at type="datetime">2014/10/01 13:42:23 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">81753170</id>
+            <text>@rebeccalee emailed DLT today. DLT has state that, &quot;We are unable to import the public key&quot; [sic]. DLT has stated that they will be contacting their &quot;vendor.&quot; The eerie yet all too familiar feeling of deja vu creeps over me once more. Time feels as though it has stopped, but I see my reflection, and I grow older every day.</text>
+            <author>Jesse Ellis</author>
+            <noted_at type="datetime">2014/10/08 21:41:03 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">82373976</id>
+            <text>10/10 Joan emailed with the following info:
+
+Don and I have spoken to our vendor.  The public key you provided was not formatted correctly.  We can set up our transfers as sftp if you provide the ipaddress, port, user id and password.  We are currently securely transferring data with banks and the IRS using this method without exchanging keys.  
+
+10/14 Becca called Joan and was given the same line about the banks and IRS...also learned that they are using software from Linoma called GoAnywhere. Jesse did some research: https://docs.google.com/document/d/1VhCeUgGT-PDrRHS64QyEkdwCj4L4tgX60PZ9p9jTnn0/
+
+10/15 Becca and Jesse coordinated a response, and consulted End Point. There is no question SSH keys are a more secure mechanism, and SSH with passphrase = ideal.  https://docs.google.com/document/d/1jxIvMm0Gk1XWaKkmk4WCtV-WwPJTvN759IgCuFvYOQM/</text>
+            <author>Rebecca Lee</author>
+            <noted_at type="datetime">2014/10/15 22:28:17 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">82505578</id>
+            <text>10/16 Becca left voicemail for Joan and sent a follow up email.</text>
+            <author>Rebecca Lee</author>
+            <noted_at type="datetime">2014/10/17 00:31:28 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">83416806</id>
+            <text>through the turmoil, persistence once more prevailed, and all walked away with a stronger bond with public-key cryptography</text>
+            <author>Jesse Ellis</author>
+            <noted_at type="datetime">2014/10/28 15:19:18 UTC</noted_at>
+          </note>
+        </notes>
+        <tasks type="array">
+          <task>
+            <id type="integer">25321422</id>
+            <description>Joan is able to drop files into the DLT account on data.ridatahub.org</description>
+            <position type="integer">1</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/09/16 16:01:23 UTC</created_at>
+          </task>
+        </tasks>
+      </story>
+      <story>
+        <id type="integer">80557160</id>
+        <project_id type="integer">445791</project_id>
+        <story_type>feature</story_type>
+        <url>https://www.pivotaltracker.com/story/show/80557160</url>
+        <estimate type="integer">3</estimate>
+        <current_state>started</current_state>
+        <description>The SSN field should be searchable in the clerical review module (similar to any of the other AS fields). 
+
+Acceptance criteria: SSN is listed in the dropdown menu in the clerical review home page. Searching on it works according to the same rules as other fields. </description>
+        <name>Add SSN as search option in clerical review.</name>
+        <requested_by>Rebecca Lee</requested_by>
+        <owned_by>Yang Xu</owned_by>
+        <created_at type="datetime">2014/10/13 14:35:14 UTC</created_at>
+        <updated_at type="datetime">2014/10/29 14:42:53 UTC</updated_at>
+        <labels>admin,core</labels>
+        <tasks type="array">
+          <task>
+            <id type="integer">26459284</id>
+            <description>Add SSN to dataset summary rows</description>
+            <position type="integer">1</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/29 14:42:53 UTC</created_at>
+          </task>
+        </tasks>
+      </story>
+      <story>
+        <id type="integer">81597776</id>
+        <project_id type="integer">445791</project_id>
+        <story_type>feature</story_type>
+        <url>https://www.pivotaltracker.com/story/show/81597776</url>
+        <estimate type="integer">1</estimate>
+        <current_state>started</current_state>
+        <description>Add new data source to Core. 
+RI Department of Labor and Training 
+short name; RI DLT</description>
+        <name>New DLT Data Source</name>
+        <requested_by>Rebecca Lee</requested_by>
+        <owned_by>Yang Xu</owned_by>
+        <created_at type="datetime">2014/10/28 16:13:47 UTC</created_at>
+        <updated_at type="datetime">2014/10/28 18:28:43 UTC</updated_at>
+        <labels>core</labels>
+      </story>
+      <story>
+        <id type="integer">81595754</id>
+        <project_id type="integer">445791</project_id>
+        <story_type>feature</story_type>
+        <url>https://www.pivotaltracker.com/story/show/81595754</url>
+        <estimate type="integer">3</estimate>
+        <current_state>started</current_state>
+        <description>**Data Source**: RI DLT
+**Sub Agency Source** _optional_:  n.a.
+
+**Model Name**:  DLT Wage
+
+**Model Long Name**: Department of Labor and Training Wage Record
+
+Schema Details (attach)
+
+**Columns for AttributeSet** _IDR models only_ :
+* ssn
+* first_name
+* last_name
+
+**Dimensions**:
+
+Quarter:
+* year_quarter
+
+New dimension. Key unit type: &quot;Quarter&quot;. Value: &quot;YYYY-Q&quot;. Takes year from first two characters of raw value, quarter from third character. E.g, from raw value &quot;142&quot;, dimension = &quot;2014-2&quot;
+
+Year:
+* year_quarter
+
+Time type: &quot;Calendar Year&quot;. Value: &quot;YYYY&quot;. Takes year from first two characters of raw value. E.g., from raw value &quot;142&quot;, dimension = &quot;2014&quot;.
+
+NAICS Code:
+
+(potential dimension. awaiting follow-up from DLT)
+
+Toggl: DLT. 15-240 DLT WDQI</description>
+        <name>DLT Wage Model</name>
+        <requested_by>Rebecca Lee</requested_by>
+        <owned_by>Yang Xu</owned_by>
+        <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+        <updated_at type="datetime">2014/10/29 20:34:33 UTC</updated_at>
+        <labels>core,data model</labels>
+        <notes type="array">
+          <note>
+            <id type="integer">83462674</id>
+            <text>Awaiting response from DLT on some particulars before moving forward with the draft schema (better to get it right the first time!).</text>
+            <author>Tim Harrigan</author>
+            <noted_at type="datetime">2014/10/28 20:25:12 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">83535204</id>
+            <text>Example IDR stories: 
+https://www.pivotaltracker.com/story/show/78923930
+https://www.pivotaltracker.com/story/show/75919322</text>
+            <author>Rebecca Lee</author>
+            <noted_at type="datetime">2014/10/29 14:10:06 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">83540646</id>
+            <text>Schema: &quot;P:\WORK\DataHub\Database\Table Schemas\DLT_Wage.xlsx&quot;
+
+Note: there may be additional attributes/fields coming in from DLT</text>
+            <author>Tim Harrigan</author>
+            <noted_at type="datetime">2014/10/29 14:45:19 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">83545206</id>
+            <text>source_id can not be blank. So I can not use SSN as source_id. Wait for final draft.</text>
+            <author>Yang Xu</author>
+            <noted_at type="datetime">2014/10/29 15:13:54 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">83546332</id>
+            <text>Tim, how many records don’t have SSN?</text>
+            <author>Rebecca Lee</author>
+            <noted_at type="datetime">2014/10/29 15:21:02 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">83549160</id>
+            <text>None, although some (&lt;500) are likely garbage (e.g., 000000001). The garbage ones also tend to be associated with more than one name. </text>
+            <author>Tim Harrigan</author>
+            <noted_at type="datetime">2014/10/29 15:37:35 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">83549324</id>
+            <text>Ok, so if none are blank, why can’t SSN be used as source id?</text>
+            <author>Rebecca Lee</author>
+            <noted_at type="datetime">2014/10/29 15:38:37 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">83550270</id>
+            <text>I can change the &quot;blank&quot; value to false for ssn on the schema if that's helpful.</text>
+            <author>Tim Harrigan</author>
+            <noted_at type="datetime">2014/10/29 15:45:31 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">83551288</id>
+            <text>currently source_id can not be blank or null. should I change it?</text>
+            <author>Yang Xu</author>
+            <noted_at type="datetime">2014/10/29 15:52:06 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">83555366</id>
+            <text>need more information about Dimensions year_quarter.</text>
+            <author>Yang Xu</author>
+            <noted_at type="datetime">2014/10/29 16:18:30 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">83556222</id>
+            <text>Tim’s working on it. We just had a lengthy conversation. He’ll update the story when he returns from the vet.</text>
+            <author>Rebecca Lee</author>
+            <noted_at type="datetime">2014/10/29 16:23:50 UTC</noted_at>
+          </note>
+          <note>
+            <id type="integer">83594224</id>
+            <text>@yangxu Let me know if that's helpful. I can add detail or edit as need be.</text>
+            <author>Tim Harrigan</author>
+            <noted_at type="datetime">2014/10/29 20:31:24 UTC</noted_at>
+          </note>
+        </notes>
+        <tasks type="array">
+          <task>
+            <id type="integer">26426864</id>
+            <description>Complete _dataset_ documentation in P:\Information Group\Incoming Datasets.xlsx</description>
+            <position type="integer">1</position>
+            <complete type="boolean">true</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426866</id>
+            <description>Document raw source metadata _for columns and data_ in Raw Data Dictionary</description>
+            <position type="integer">2</position>
+            <complete type="boolean">true</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426868</id>
+            <description>Create Schema - Save in \\tppfile\data\work\datahub\database\Table Schemas\</description>
+            <position type="integer">3</position>
+            <complete type="boolean">true</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426870</id>
+            <description>Add to sprint</description>
+            <position type="integer">4</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426872</id>
+            <description>Create test import file</description>
+            <position type="integer">5</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426874</id>
+            <description>Add subdirectory into /home/datahub/import_test (new data sources only)</description>
+            <position type="integer">6</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426876</id>
+            <description>Programming Tasks</description>
+            <position type="integer">7</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426878</id>
+            <description>Admin user: test import on dev </description>
+            <position type="integer">8</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426880</id>
+            <description>Verify integrity of data and desirability of model on dev</description>
+            <position type="integer">9</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426882</id>
+            <description>Verify order of fields displayed in core admin rows is desirable.</description>
+            <position type="integer">10</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426884</id>
+            <description>Push to production</description>
+            <position type="integer">11</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426886</id>
+            <description>Import on production</description>
+            <position type="integer">12</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426888</id>
+            <description>Add task detail to Basecamp log: https://basecamp.com/2189810/projects/2324561/documents/3130209</description>
+            <position type="integer">13</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426890</id>
+            <description>Add model to Basecamp activity calendar</description>
+            <position type="integer">14</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426892</id>
+            <description>Create story(ies) for related view(s)</description>
+            <position type="integer">15</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:45 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26426894</id>
+            <description>FInish</description>
+            <position type="integer">16</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 15:52:46 UTC</created_at>
+          </task>
+        </tasks>
+      </story>
+      <story>
+        <id type="integer">81596662</id>
+        <project_id type="integer">445791</project_id>
+        <story_type>feature</story_type>
+        <url>https://www.pivotaltracker.com/story/show/81596662</url>
+        <estimate type="integer">3</estimate>
+        <current_state>started</current_state>
+        <description>Reverse lookup from AS to IDR (currently AS are created during first pass on a particular model). So for example, OHE_BIO has SSN but these values are not in the &quot;new&quot; expanded AS model. 
+
+Create some sort of routine to run? 
+
+Clerical review may have some clues.
+
+Acceptance criteria: Existing models with SSN in IDR have corresponding AS populated with SSN. OHE and ServeRI AmeriCorps for sure. </description>
+        <name>Populate the AS SSN field for every model with partial/complete SSNs in IDRs</name>
+        <requested_by>Rebecca Lee</requested_by>
+        <owned_by>Jesse Ellis</owned_by>
+        <created_at type="datetime">2014/10/28 16:03:34 UTC</created_at>
+        <updated_at type="datetime">2014/10/28 18:43:02 UTC</updated_at>
+        <labels>core,linkage</labels>
+        <tasks type="array">
+          <task>
+            <id type="integer">26427484</id>
+            <description>OHE_Bio</description>
+            <position type="integer">1</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 16:07:06 UTC</created_at>
+          </task>
+          <task>
+            <id type="integer">26427488</id>
+            <description>ServeRI_AmeriCorps</description>
+            <position type="integer">2</position>
+            <complete type="boolean">false</complete>
+            <created_at type="datetime">2014/10/28 16:07:11 UTC</created_at>
+          </task>
+        </tasks>
+      </story>
+    </stories>
+  </iteration>
+</iterations>
