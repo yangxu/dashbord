@@ -1,0 +1,50 @@
+<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
+<script type="text/javascript">
+
+
+
+app.controller('TaskCtrl', ['$scope', '$http', function($scope, $http) {
+        $scope.empty = function(value) {
+          if (angular.equals({}, value)) {
+            return true;
+          } else {
+            return false;
+          }
+        };
+        $http({method: 'GET', url: '/pv_json/?project={{project_id}}'}).
+        success(function(data, status, headers, config) {
+          $scope.current_iterations = data.iterations;
+        }).
+        error(function(data, status, headers, config) {});
+}]);
+
+</script>
+
+
+
+<div ng-controller="TaskCtrl">
+<table ng-repeat="i in current_iterations">
+    <tr>
+        <th>Id [[i.id]]</th>
+        <th>Story Type</th>
+        <th>Story Name</th>
+        <th>URL</th>
+        <th>Description</th>
+        <th>Notes</th>
+    </tr>
+    <tr ng-repeat="story in i.stories">
+        <td>[[story.id]]</td>
+        <td>[[story.story_type]]</td>
+        <td>[[story.name]]</td>
+        <td>[[story.url]]</td>
+        <td>[[story.description]]</td>
+        <td></td>
+    </tr>
+</table>
+</div>
+
+
+
+

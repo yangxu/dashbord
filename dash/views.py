@@ -18,16 +18,19 @@ def index(request):
        return render_to_response('dash/index.html', {}, context_instance=RequestContext(request))
     elif request.method == 'GET':
        if request.user.is_authenticated():
-          user, create = Profile.objects.get_or_create(user = request.user)
-          if create:
-             projects = []
-          else:
-             client = PivotalClient(token=user.pv_api_token, cache='pvcache')
-             projects = client.projects.all()['projects']
+          #user, create = Profile.objects.get_or_create(user = request.user)
+          #if create:
+          #   projects = []
+          #else:
+          #   client = PivotalClient(token=user.pv_api_token, cache='pvcache')
+          #   projects = client.projects.all()['projects']
 
-          return render_to_response('dash/index.html', {'projects':projects}, context_instance=RequestContext(request))
+          return render_to_response('dash/index.html', {'projects':'projects'}, context_instance=RequestContext(request))
        else:
           return redirect("/login")
+
+def project(request, project_id):
+    return render_to_response('accounts/project.html', {"project_id":project_id}, context_instance=RequestContext(request))
 
 def default(obj):
     """Default JSON serializer."""
@@ -53,7 +56,7 @@ def pv_json(request):
        projects = client.projects.all()['projects']
        if "project" in request.GET:
           prj = int(request.GET["project"])
-          iterations = client.iterations.current(projects[prj]['id'])
+          iterations = client.iterations.current(prj)
           return HttpResponse(json.dumps(iterations, default=default), content_type="application/json")
 
        iterations = client.iterations.current(projects[0]['id'])

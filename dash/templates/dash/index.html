@@ -2,8 +2,8 @@
 
 {% block content %}
 <!--Start Container-->
-<div id="main" class="container-fluid">
-	<div class="row">
+<div id="main" class="container-fluid" ng-app="sidbar">
+	<div class="row" ng-controller="ProjectCtrl">
 		<div id="sidebar-left" class="col-xs-2 col-sm-2">
 			<ul class="nav main-menu">
 				<li>
@@ -12,15 +12,13 @@
 						<span class="hidden-xs">Dashboard</span>
 					</a>
 				</li>
-                                <li class="dropdown">
+                                <li class="dropdown" ng-click="loadProject()">
                                         <a href="#" class="dropdown-toggle">
                                                 <i class="fa fa-dashboard"></i>
                                                 <span class="hidden-xs">Pivotal Tracker</span>
                                         </a>
                                         <ul class="dropdown-menu">
-                                        {% for project in projects %}
-                                            <li><a class="ajax-link" href="/pivotal/project/{{project.id}}">{{project.name}}</a></li>
-                                        {% endfor %}
+                                            <li ng-repeat="project in projects"><a class="ajax-link" href="/pivotal/project/[[project.id]]">[[project.name]]</a></li>
                                         </ul>
 
                                 </li>
