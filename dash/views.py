@@ -18,7 +18,14 @@ def index(request):
        return render_to_response('dash/index.html', {}, context_instance=RequestContext(request))
     elif request.method == 'GET':
        if request.user.is_authenticated():
-          return render_to_response('dash/index.html', {}, context_instance=RequestContext(request))
+          user, create = Profile.objects.get_or_create(user = request.user)
+          if create:
+             projects = []
+          else:
+             client = PivotalClient(token=user.pv_api_token, cache='pvcache')
+             projects = client.projects.all()['projects']
+
+          return render_to_response('dash/index.html', {'projects':projects}, context_instance=RequestContext(request))
        else:
           return redirect("/login")
 

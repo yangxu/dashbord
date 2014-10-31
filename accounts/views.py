@@ -38,8 +38,11 @@ def profile(request):
 
 @login_required
 def settings(request):
-    user = Profile.objects.get(user = request.user)
+    user = Profile.objects.get_or_create(user=request.user)[0]
     return render_to_response('accounts/settings.html', {'user':user}, context_instance=RequestContext(request))
     
-
+@login_required
+def dashboard(request):
+    user = Profile.objects.get_or_create(user=request.user)[0]
+    return render_to_response('accounts/dashboard.html', {'user':user}, context_instance=RequestContext(request))
 

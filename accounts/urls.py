@@ -7,5 +7,7 @@ urlpatterns = patterns('',
     url(r'logout/', 'accounts.views.logout', name='logout'),
     url(r'profile/', 'accounts.views.profile', name='profile'),
     url(r'settings/', 'accounts.views.settings', name='settings'),
+    url(r'dashboard/', 'accounts.views.dashboard', name='dashboard'),
+
 )
 
