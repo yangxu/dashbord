@@ -18,14 +18,14 @@ def index(request):
        return render_to_response('dash/index.html', {}, context_instance=RequestContext(request))
     elif request.method == 'GET':
        if request.user.is_authenticated():
-          #user, create = Profile.objects.get_or_create(user = request.user)
-          #if create:
-          #   projects = []
-          #else:
-          #   client = PivotalClient(token=user.pv_api_token, cache='pvcache')
-          #   projects = client.projects.all()['projects']
+          user, create = Profile.objects.get_or_create(user = request.user)
+          if create:
+             projects = []
+          else:
+             client = PivotalClient(token=user.pv_api_token, cache='pvcache')
+             projects = client.projects.all()['projects']
 
-          return render_to_response('dash/index.html', {'projects':'projects'}, context_instance=RequestContext(request))
+          return render_to_response('dash/index.html', {'projects':projects}, context_instance=RequestContext(request))
        else:
           return redirect("/login")
 
@@ -49,14 +49,20 @@ def default(obj):
 
 @login_required
 def pv_json(request):
-    #http://localhost:8000/pv_json/?project=3 
+    #http://localhost:8000/pv_json/?project=442737 
     #try:
        user = Profile.objects.get(user = request.user)
        client = PivotalClient(token=user.pv_api_token, cache='pvcache')
        projects = client.projects.all()['projects']
        if "project" in request.GET:
           prj = int(request.GET["project"])
-          iterations = client.iterations.current(prj)
+          if request.GET["target"]=="current":
+             iterations = client.iterations.current(prj)
+          elif request.GET["target"]=="backlog":
+             iterations = client.iterations.backlog(prj)
+          elif request.GET["target"]=="done":
+             iterations = client.iterations.done(prj)
+
           return HttpResponse(json.dumps(iterations, default=default), content_type="application/json")
 
        iterations = client.iterations.current(projects[0]['id'])
