@@ -9,3 +9,5 @@ package.box
 *.log
 *.sqlite3
 *.db
+pvcache/
+static/
